@@ -13,7 +13,7 @@ const SectionOne = () => {
 
   return (
     <section className="w-full min-h-screen text-white relative overflow-x-hidden overflow-hidden">
-      <p className="absolute right-4 top-4 font-bold text-lg z-[99]">
+      <p className="absolute right-4 top-4 font-bold text-lg z-30">
         Sound{" "}
         <span
           className={`${
@@ -24,19 +24,21 @@ const SectionOne = () => {
           {soundState ? "ON" : "OFF"}
         </span>
       </p>
-      <div className="absolute right-0 top-24 z-[99]">
-        <a
-          href="https://www.linkedin.com/in/huseyinerkal/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/images/awwards.png"
-            alt="awwards"
-            width={80}
-            height={130}
-          />
-        </a>
+      <div className="absolute right-0 top-24 z-30 w-32 h-auto">
+        <div className="relative w-full aspect-w-1 aspect-h-1">
+          <a
+            href="https://www.linkedin.com/in/huseyinerkal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/awwards.png"
+              alt="awwards"
+              layout="fill"
+              objectFit="contain"
+            />
+          </a>
+        </div>
       </div>
       <div className="w-full h-screen">
         <div className="relative container mx-auto flex flex-col h-full justify-center items-start xs:text-2xl sm:text-6xl lg:text-8xl">
