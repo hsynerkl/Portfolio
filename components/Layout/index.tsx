@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex">
+    <div className="relative flex">
       <Header />
       <main className="w-full lg:pl-32">{children}</main>
     </div>
