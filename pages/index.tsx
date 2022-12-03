@@ -25,6 +25,19 @@ export default function Home() {
     <>
       <Head>
         <title>HE | Front End Developer</title>
+        <script
+          async
+          data-name="BMC-Widget"
+          data-cfasync="false"
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          data-id="hsynerkl"
+          data-description="Support me on Buy me a coffee!"
+          data-message=""
+          data-color="#ff813f"
+          data-position="Right"
+          data-x_margin="30"
+          data-y_margin="18"
+        ></script>
       </Head>
       <>
         {understandState ? (
