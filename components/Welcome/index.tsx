@@ -12,7 +12,7 @@ const Welcome = ({
 
   return (
     <section>
-      <div className="w-full opacity-95 absolute top-0 left-0 z-50 h-screen bg-black"></div>
+      <div className="w-full opacity-95 absolute top-0 left-0 z-50 h-screen bg-black overflow-hidden "></div>
       <div className=" z-[100] absolute left-0 top-0 w-full h-screen flex justify-center items-center py-16 text-[rgb(241,75,103)]">
         <div className="text-center container mx-auto   ">
           <h1 className="py-6 text-xl font-bold">Warning!</h1>
