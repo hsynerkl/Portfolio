@@ -12,7 +12,7 @@ const SectionOne = () => {
   const sentenceThree = "web developer".split("");
 
   return (
-    <section className="w-full min-h-screen text-white relative overflow-x-hidden overflow-hidden">
+    <section className="w-full min-h-screen max-h-screen text-white relative overflow-x-hidden overflow-hidden">
       <p className="absolute right-4 top-4 font-bold text-lg z-30">
         Sound{" "}
         <span
@@ -63,7 +63,9 @@ const SectionOne = () => {
           <Button text="Contact Me!" />
         </div>
       </div>
-      <ParticlesComponent id="tsparticles" />
+      <div className="top-0 left-0 bottom-0 absolute w-full h-full">
+        <ParticlesComponent id="tsparticles" />
+      </div>
       <div className="text-xs animate-bounce w-5 h-5 absolute bottom-10 left-0">
         <ChevronDown />
       </div>
