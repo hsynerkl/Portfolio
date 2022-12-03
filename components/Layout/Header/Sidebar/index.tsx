@@ -133,91 +133,93 @@ const Sidebar = () => {
           <MenuIcon />
         </div>
         {showSidebar && (
-          <div className="z-50 absolute left-0 bottom-0 right-0 top-0 bg-black text-white ">
-            <p
-              className="absolute top-4 left-5 text-2xl cursor-pointer hover:text-[#08fdd8] transition "
-              onClick={() => setShowSidebar((prev) => !prev)}
-            >
-              x
-            </p>
+          <div className="relative w-full h-screen overflow-hidden overflow-y-hidden">
             <div className="container mx-auto">
-              <div
-                className="w-full py-16 flex justify-start cursor-pointer"
-                onClick={() => router.replace("/")}
-              >
-                <div className="cursor-pointer relative">
-                  <p className="absolute left-0 top-[4.10rem] text-8xl font-black text-[#08fdd8]">
-                    H
-                  </p>
-                  <p className="absolute left-1 text-8xl top-16 font-black text-[rgb(241,75,103)]">
-                    H
+              <div className="z-50 fixed left-0 bottom-0 right-0 top-0 bg-black text-white ">
+                <p
+                  className="fixed top-4 left-5 text-2xl cursor-pointer hover:text-[#08fdd8] transition "
+                  onClick={() => setShowSidebar((prev) => !prev)}
+                >
+                  x
+                </p>
+                <div
+                  className="w-full py-16 flex justify-start cursor-pointer"
+                  onClick={() => router.replace("/")}
+                >
+                  <div className="cursor-pointer relative">
+                    <p className="fixed left-0 top-[4.10rem] text-8xl font-black text-[#08fdd8]">
+                      H
+                    </p>
+                    <p className="fixed left-1 text-8xl top-16 font-black text-[rgb(241,75,103)]">
+                      H
+                    </p>
+                  </div>
+                </div>
+                <div className="ml-1 w-full flex flex-col mt-24">
+                  <p className="text-sm ml-2">Hüseyin</p>
+                  <p className="text-xs ml-2 text-[#909096]">
+                    Front End Developer / React Expert
                   </p>
                 </div>
-              </div>
-              <div className="ml-1 w-full flex flex-col mt-24">
-                <p className="text-sm ml-2">Hüseyin</p>
-                <p className="text-xs ml-2 text-[#909096]">
-                  Front End Developer / React Expert
-                </p>
-              </div>
-              <div className="flex w-full mt-10 flex-col ">
-                <ul className="text-center text-[#909096] leading-10">
-                  <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
-                    <Link href="/about">
-                      <a>About</a>
-                    </Link>
-                  </li>
-                  <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
-                    <Link href="/myskills">
-                      <a>My Skills</a>
-                    </Link>
-                  </li>
-                  <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
-                    <Link href="/work">
-                      <a>Work</a>
-                    </Link>
-                  </li>
-                  <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
-                    <Link href="/contact">
-                      <a>Contact</a>
-                    </Link>
-                  </li>
-                  <li className="border-y text-[#08fdd8] border-[#282828]">
-                    <Link href="/">
-                      <a>Home</a>
-                    </Link>
-                  </li>
-                </ul>
+                <div className="flex w-full mt-10 flex-col ">
+                  <ul className="text-center text-[#909096] leading-10">
+                    <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
+                      <Link href="/about">
+                        <a>About</a>
+                      </Link>
+                    </li>
+                    <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
+                      <Link href="/myskills">
+                        <a>My Skills</a>
+                      </Link>
+                    </li>
+                    <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
+                      <Link href="/work">
+                        <a>Work</a>
+                      </Link>
+                    </li>
+                    <li className="border-y hover:text-[#08fdd8] transition border-[#282828]">
+                      <Link href="/contact">
+                        <a>Contact</a>
+                      </Link>
+                    </li>
+                    <li className="border-y text-[#08fdd8] border-[#282828]">
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
+                    </li>
+                  </ul>
 
-                <ul className="h-48 flex justify-center mt-10">
-                  <li className="w-4 h-4 mx-2 hover:text-[#08fdd8] transition py-2">
-                    <a
-                      target="_blank"
-                      href="https://www.linkedin.com/in/huseyinerkal/"
-                      rel="noopener noreferrer"
-                    >
-                      <LinkedinIcon />
-                    </a>
-                  </li>
-                  <li className="w-4 h-4 hover:text-[#08fdd8] mx-2 transition py-2">
-                    <a
-                      target="_blank"
-                      href="https://github.com/hsynerkl"
-                      rel="noopener noreferrer"
-                    >
-                      <GithubIcon />
-                    </a>
-                  </li>
-                  <li className="w-4 h-4 hover:text-[#08fdd8] mx-2 transition py-2">
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://www.youtube.com"
-                    >
-                      <YoutubeIcon />
-                    </a>
-                  </li>
-                </ul>
+                  <ul className="h-48 flex justify-center mt-10">
+                    <li className="w-4 h-4 mx-2 hover:text-[#08fdd8] transition py-2">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/huseyinerkal/"
+                        rel="noopener noreferrer"
+                      >
+                        <LinkedinIcon />
+                      </a>
+                    </li>
+                    <li className="w-4 h-4 hover:text-[#08fdd8] mx-2 transition py-2">
+                      <a
+                        target="_blank"
+                        href="https://github.com/hsynerkl"
+                        rel="noopener noreferrer"
+                      >
+                        <GithubIcon />
+                      </a>
+                    </li>
+                    <li className="w-4 h-4 hover:text-[#08fdd8] mx-2 transition py-2">
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://www.youtube.com"
+                      >
+                        <YoutubeIcon />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

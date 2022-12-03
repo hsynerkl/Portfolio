@@ -13,7 +13,7 @@ const SectionOne = () => {
 
   return (
     <section className="w-full min-h-screen text-white relative overflow-x-hidden overflow-hidden">
-      <p className="absolute right-4 top-4 font-bold text-lg z-50">
+      <p className="absolute right-4 top-4 font-bold text-lg z-[99]">
         Sound{" "}
         <span
           className={`${
@@ -24,7 +24,7 @@ const SectionOne = () => {
           {soundState ? "ON" : "OFF"}
         </span>
       </p>
-      <div className="absolute right-0 top-24 z-50">
+      <div className="absolute right-0 top-24 z-[99]">
         <a
           href="https://www.linkedin.com/in/huseyinerkal/"
           target="_blank"

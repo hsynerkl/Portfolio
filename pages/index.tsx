@@ -2,7 +2,7 @@ import SectionOne from "components/Home/SectionOne/index";
 import SectionTwo from "components/Home/SectionTwo";
 import LoadingPage from "components/LoadingPage";
 import Head from "next/head";
-import { useState, Suspense, useEffect } from "react";
+import { useState, Suspense, useLayoutEffect } from "react";
 import dynamic from "next/dynamic";
 import Welcome from "components/Welcome";
 
@@ -15,7 +15,7 @@ export default function Home() {
   const SectionFour = dynamic(() => import("components/Home/SectionFour"));
   //test
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let understandValue = JSON.parse(localStorage.getItem("understand")!);
     console.log(understandValue);
     understandValue ? setUnderstandState(true) : setUnderstandState(false);
