@@ -127,7 +127,7 @@ const Sidebar = () => {
       </aside>
       <aside>
         <div
-          className="w-6 h-6 text-white lg:hidden absolute top-5 cursor-pointer left-4 z-40 hover:text-[#08fdd8] transition"
+          className="w-7 h-7 text-white lg:hidden fixed top-5 cursor-pointer left-4 z-40 hover:text-[#08fdd8] transition bg-transparent"
           onClick={() => setShowSidebar((prev) => !prev)}
         >
           <MenuIcon />
@@ -135,7 +135,7 @@ const Sidebar = () => {
         {showSidebar && (
           <div className="z-50 absolute left-0 bottom-0 right-0 top-0 bg-black text-white ">
             <p
-              className="absolute top-4 left-5 text-xl cursor-pointer hover:text-[#08fdd8] transition "
+              className="absolute top-4 left-5 text-2xl cursor-pointer hover:text-[#08fdd8] transition "
               onClick={() => setShowSidebar((prev) => !prev)}
             >
               x
