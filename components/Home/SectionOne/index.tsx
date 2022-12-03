@@ -55,7 +55,7 @@ const SectionOne = () => {
               <TextSpan key={index}>{letter}</TextSpan>
             ))}
           </div>
-          <p className="text-xs sm:text-lg font-bold ml-1 mt-1 text-[#A5A5A5]">
+          <p className="text-xs sm:text-lg font-bold mt-1 text-[#A5A5A5]">
             Front End Developer / React Expert
           </p>
           <Button text="Contact Me!" />
