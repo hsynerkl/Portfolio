@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Button = ({ text }: { text: string }) => {
   return (
     <button
@@ -5,7 +7,9 @@ const Button = ({ text }: { text: string }) => {
           before:content-[''] before:flex before:justify-center before:items-center before:absolute before:bottom-0 before:left-0 before:w-0 before:h-full before:bg-[#08fdd8] before:transition-all before:-z-10  hover:before:w-full 
           after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-full"
     >
-      {text}
+      <Link href="#">
+        <a>{text}</a>
+      </Link>
     </button>
   );
 };
