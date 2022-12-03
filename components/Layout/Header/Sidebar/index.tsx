@@ -147,10 +147,10 @@ const Sidebar = () => {
                   onClick={() => router.replace("/")}
                 >
                   <div className="cursor-pointer relative">
-                    <p className="fixed left-0 top-[4.10rem] text-8xl font-black text-[#08fdd8]">
+                    <p className="fixed left-0 top-[8.10rem] text-8xl font-black text-[#08fdd8]">
                       H
                     </p>
-                    <p className="fixed left-1 text-8xl top-16 font-black text-[rgb(241,75,103)]">
+                    <p className="fixed left-1 text-8xl top-32 font-black text-[rgb(241,75,103)]">
                       H
                     </p>
                   </div>
