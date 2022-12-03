@@ -11,6 +11,7 @@ export default function Home() {
   const [understandState, setUnderstandState] = useState(false);
 
   //test
+  const SectionTwo = dynamic(() => import("components/Home/SectionTwo"));
   const SectionThree = dynamic(() => import("components/Home/SectionThree"));
   const SectionFour = dynamic(() => import("components/Home/SectionFour"));
   //test
@@ -47,7 +48,9 @@ export default function Home() {
             ) : (
               <>
                 <SectionOne />
-                <SectionTwo work={false} />
+                <Suspense>
+                  <SectionTwo work={false} />
+                </Suspense>
                 <Suspense>
                   <SectionThree about={false} />
                 </Suspense>
