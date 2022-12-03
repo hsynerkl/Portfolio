@@ -31,7 +31,7 @@ const SectionOne = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src="/images/awwards.avif"
+            src="/images/awwards.png"
             alt="awwards"
             width={80}
             height={130}

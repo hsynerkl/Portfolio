@@ -19,6 +19,10 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
+    setShowSidebar(false);
+  }, [router.pathname]);
+
+  useEffect(() => {
     window.addEventListener("resize", sidebarResize);
     return () => window.removeEventListener("resize", sidebarResize);
   }, []);
