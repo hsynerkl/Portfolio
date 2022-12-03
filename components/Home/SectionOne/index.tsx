@@ -63,7 +63,7 @@ const SectionOne = () => {
           <Button text="Contact Me!" />
         </div>
       </div>
-      <div className="top-0 left-0 bottom-0 absolute w-full h-full">
+      <div className="top-0 z-[-1] left-0 bottom-0 absolute w-full h-full">
         <ParticlesComponent id="tsparticles" />
       </div>
       <div className="text-xs animate-bounce w-5 h-5 absolute bottom-10 left-0">
