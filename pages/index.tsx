@@ -33,7 +33,7 @@ export default function Home() {
           data-id="hsynerkl"
           data-description="Support me on Buy me a coffee!"
           data-message=""
-          data-color="#ff813f"
+          data-color="#FF5F5F"
           data-position="Right"
           data-x_margin="30"
           data-y_margin="18"
