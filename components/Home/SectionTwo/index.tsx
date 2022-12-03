@@ -52,7 +52,7 @@ const SectionTwo = ({ work }: { work: boolean }) => {
               {portfolioData.map((item, index) => (
                 <div
                   key={index}
-                  className="relative aspect-w-1 aspect-h-1 before:content[''] before:w-0 before:h-full hover:before:bg-black hover:before:w-full before:z-10 before:absolute before:top-0 before:left-0 before:opacity-90 before:flex before:justify-center before:items-center hover:before:content-['View'] before:cursor-pointer before:text-[#08fdd8] transition-all before:transition-all"
+                  className="relative aspect-w-1 w-full h-auto aspect-h-1 before:content[''] before:w-0 before:h-full hover:before:bg-black hover:before:w-full before:z-10 before:absolute before:top-0 before:left-0 before:opacity-90 before:flex before:justify-center before:items-center hover:before:content-['View'] before:cursor-pointer before:text-[#08fdd8] transition-all before:transition-all"
                 >
                   <Link href="https://github.com/hsynerkl">
                     <a>
